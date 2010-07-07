@@ -1,0 +1,9 @@
+<h2>sort by author's name</h2>
+<% @ruby_books.each do |rb| %>
+  <div class ="entry">
+    <h3>author: <%= rb.author %></h3>
+    <%= image_tag(rb.image_url, :class => "round") %>
+    <h3>title: <%= rb.title %></h3>
+    <h3>price: <%= rb.price %></h3>
+ </div>
+<% end %> 

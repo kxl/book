@@ -1,0 +1,11 @@
+<h1>Ruby#price</h1>
+
+<ul>
+<% @ruby_books.each do |rb| %>
+    <h3><%= rb.title %></h3>
+    <%= image_tag(rb.image_url, :class => "round") %>
+    <h3><%= rb.author %></h3>
+    <h3><%= rb.price %></h3>
+<% end %> 
+
+
